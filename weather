@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Using the awesome wttr.in as weather forecast provider.
+
+echo 'Weather'
+
+sleep 5
+
+current_hour= date +"%d-%m-%y";
+current_date= date +"%r":
+echo $current_hour;
+echo $current_time
+
+
+
+curl http://wttr.in/$1
