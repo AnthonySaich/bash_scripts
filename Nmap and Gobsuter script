@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "NMAP and  Gobuster script"
+
+echo "What is the IP address of the sever?"
+read ip
+
+echo "NMAP time"
+
+sudo nmap -sV --script vuln  -O  $ip
+
+
+echo "Gobuster time"
+
+gobuster dir -u $ip  -w /usr/share/wordlists/dirb/big.txt
