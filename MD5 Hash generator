@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 'MD5 Hash generator'
+
+echo -n $1 | md5sum | cut -f1 -d ' '
